@@ -1,48 +1,48 @@
 [
   {
-    "name": "Elder Desmond Alasa Ogboanoh",
+    "name": "Elder  Alasa ",
     "departureDate": "15-04-2024",
     "mission": "Cape Verde Mission",
-    "image":"image/ogoanoh.jpg",
+    "image": "image/ogoanoh.jpg",
     "gender": "him"
   },
   {
-    "name": "Sister Victoria Inyang",
+    "name": "Sister Victoria",
     "departureDate": "03-2025",
     "gender": "her",
     "mission": "Phillipines Mission",
     "image": "image/favour-inyang.webp"
-    },
+  },
   {
-    "name": "Elder Israel Oyeyemi",
+    "name": "Elder Oyeyemi",
     "departureDate": "31-10-2024",
     "gender": "him",
     "mission": "Nigeria Uyo Mission",
     "image": "image/israel-oyeyemi.jpg"
   },
   {
-    "name": "Elder Victor D. Etuk",
+    "name": "Elder F-Etuk",
     "departureDate": "21-12-2024",
     "mission": "Nigeria Calabar Mission",
-    "image": "./image/victor.jpeg",
+    "image": "./image/Victor (2).jpeg",
     "gender": "him"
   },
   {
-    "name": "Sister Ayomide Ijitola",
+    "name": "Sister  Ijitola",
     "departureDate": "21-11-2024",
     "mission": "Nigeria Enugu Mission",
     "image": "image/sister-ayomide.jpg",
     "gender": "her"
   },
   {
-    "name": "Elder Josiah J. Kefas",
+    "name": "Elder Kefas",
     "departureDate": "21-01-2025",
     "mission": "Nigeria Uyo Mission",
     "gender": "him",
     "image": "image/kefas-close-2.jpg"
   },
   {
-    "name": "Sister Favour Etuk",
+    "name": "Sister F-Etuk",
     "departureDate": "27-03-2025",
     "mission": "Nigeria Abuja Mission",
     "image": "image/favour-etuk.jpg",
