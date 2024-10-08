@@ -200,7 +200,7 @@ h3 {
 }
 
 .card-img-top {
-  height: 600px;
+  height: 750px;
   object-fit: cover;
 }
 
@@ -248,18 +248,18 @@ footer {
 
 .footer-logo-div {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
   padding: 10px;
 }
 
 .footer-logo-div img {
-  max-width: 100%; 
-  height: auto; 
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 576px) {
   .footer-logo-div img {
-    width: 50%; 
+    width: 50%;
   }
 }
