@@ -20,28 +20,3 @@ let slideInterval = setInterval(showSlides, 3000);
 // Initial display
 showSlides();
 //JAVASCRIPT SLIDE FUNCTION FOR ABOUT US ENDS
-
-// //JAVASCRIPT SLIDE FUNCTION FOR QUOTES/IMAGE SLIDESHOW STARTS
-// let slideIndex2 = 0;
-// const slides2 = document.querySelectorAll(".slide2");
-
-// function showSlides2() {
-//   slides.forEach((slide2, index) => {
-//     // This removes the active classes from all slides
-//     slide2.classList.remove("active");
-//     if (index === slideIndex2) {
-//       //This adds active class to the current slide
-//       slide2.classList.add("active");
-//     }
-//   });
-//   slideIndex2 = (slideIndex2 + 1) % slides.length;
-// }
-
-// // This change the slides every 3 seconds.
-// let slideInterval2 = setInterval(showSlides2, 3000);
-
-// const slideshowContainer2 = document.querySelector(".slideshow-container2");
-
-// // Initial display
-// showSlides2();
-// //JAVASCRIPT SLIDE FUNCTION FOR QUOTES/IMAGE SLIDESHOW ENDS

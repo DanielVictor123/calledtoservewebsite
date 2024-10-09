@@ -11,56 +11,49 @@ fetch("missionaries.json")
     // Clear existing content if any
     missionariesList.innerHTML = "";
 
-    // Create a carousel item
-    let carouselItem = document.createElement("div");
-    carouselItem.classList.add("carousel-item", "active"); // Set first item as active
-
-    // Create a row for grid layout
-    let row = document.createElement("div");
-    row.classList.add("row");
-
-    // Loop through each missionary and create HTML
+    // Create slides
     data.forEach((missionary, index) => {
-      const missionaryCard = document.createElement("div");
-      missionaryCard.classList.add("col-12", "col-sm-6", "col-md-4");
+      const slide = document.createElement("div");
+      slide.classList.add("slide");
 
-      missionaryCard.innerHTML = `
-        <div class="card col-lg-12 mt-5">
-          <img src="${missionary.image}" loading="lazy" alt="Profile picture" class="card-img-top">
-          <div class="card-body">
-            <h4 class="card-title text-primary">${missionary.name}</h4>
-            <h6 class="card-subtitle mb-2 text-muted">Departure Date: ${missionary.departureDate}</h6>
-            <h6 class="card-subtitle mb-2 text-muted">Return Date: ??-??-????</h6>
-            <h6 class="card-subtitle mb-2 text-muted">Mission: ${missionary.mission}</h6>
-            <h6 class="card-subtitle mb-2 text-muted">Mail:</h6>
-            <a style="display:none;" href="mailto:${missionary.mail}" style="font-size: 0.75rem;">
-              <h4>${missionary.mail}</h4>
-            </a>
-            <button style="display:none;" class="button open-button">More</button>
-          </div>
-        </div>
-      `;
+      slide.innerHTML = `
+                        <div class="card mt-5">
+                            <img src="${missionary.image}" loading="lazy" alt="Profile picture" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary">${missionary.name}</h4>
+                                <h6 class="card-subtitle mb-2 text-muted">Departure Date: ${missionary.departureDate}</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">Return Date: ??-??-????</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">Mission: ${missionary.mission}</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">Mail:</h6>
+                                <a href="mailto:${missionary.gender}" style="font-size: 0.75rem;">
+                                    <h4>${missionary.gender}</h4>
+                                </a>
+                            </div>
+                        </div>
+                    `;
 
-      // THIS WILL APPEND THE CARD TO THE ROW
-      row.appendChild(missionaryCard);
-
-      // FOR EVERY 3 MISSIONARIES, THIS WILL CREATE A NEW CAROUSEL ITEM
-      if ((index + 1) % 3 === 0) {
-        carouselItem.appendChild(row);
-        missionariesList.appendChild(carouselItem);
-        // Reset for the next carousel item
-        carouselItem = document.createElement("div");
-        carouselItem.classList.add("carousel-item");
-        row = document.createElement("div");
-        row.classList.add("row");
-      }
+      missionariesList.appendChild(slide);
     });
 
-    // THIS WILL APPEND THE LAST ROWS IF ANY CARDS
-    if (row.children.length > 0) {
-      carouselItem.appendChild(row);
-      missionariesList.appendChild(carouselItem);
+    // Set the first slide as active
+    if (missionariesList.children.length > 0) {
+      missionariesList.children[0].classList.add("active");
     }
+
+    // Slideshow functionality
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlides() {
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].classList.add("active");
+    }
+
+    // Change slides every 3 seconds
+    setInterval(showSlides, 3000);
   })
   .catch((error) => {
     console.error("Error fetching missionaries:", error);
