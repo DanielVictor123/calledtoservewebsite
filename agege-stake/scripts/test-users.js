@@ -18,16 +18,15 @@ fetch("missionaries.json")
 
       slide.innerHTML = `
                         <div class="card mt-5">
+                          <a href="${missionary.image}" target="_blank">
                             <img src="${missionary.image}" loading="lazy" alt="Profile picture" class="card-img-top">
+                          </a>
                             <div class="card-body">
-                                <h4 class="card-title text-primary">${missionary.name}</h4>
-                                <h6 class="card-subtitle mb-2 text-muted">Departure Date: ${missionary.departureDate}</h6>
-                                <h6 class="card-subtitle mb-2 text-muted">Return Date: ??-??-????</h6>
-                                <h6 class="card-subtitle mb-2 text-muted">Mission: ${missionary.mission}</h6>
-                                <h6 class="card-subtitle mb-2 text-muted">Mail:</h6>
-                                <a href="mailto:${missionary.gender}" style="font-size: 0.75rem;">
-                                    <h4>${missionary.gender}</h4>
-                                </a>
+                                <h4 class=" text-primary text-decoration-none">${missionary.name}</h4>
+                                <h6 class=" mb-2 text-muted text-decoration-none">Departure Date: ${missionary.departureDate}</h6>
+                                <h6 class=" mb-2 text-muted text-decoration-none">Return Date: ??-??-????</h6>
+                                <h6 class=" mb-2 text-muted text-decoration-none">Mission: ${missionary.mission}</h6>
+                                <h6 class=" mb-2 text-muted text-decoration-none">Mail:</h6>
                             </div>
                         </div>
                     `;
@@ -53,7 +52,7 @@ fetch("missionaries.json")
     }
 
     // Change slides every 3 seconds
-    setInterval(showSlides, 3000);
+    setInterval(showSlides, 5000);
   })
   .catch((error) => {
     console.error("Error fetching missionaries:", error);
