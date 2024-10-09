@@ -46,6 +46,7 @@
     <title>Agege Stake Missionaries</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/slideshow.css" />
     <link rel="stylesheet" href="styles/screen.css" />
     <link rel="stylesheet" href="styles/load.css" />
     <link rel="stylesheet" href="styles/ads.css" />
@@ -109,62 +110,51 @@
       </header>
       <!--HEADER ENDS-->
 
-      <!-- CAROUSEL/SLIDESHOW STARTS HERE -->
-      <div
-        id="missionaryCarousel"
-        class="carousel slide col-lg-12 mt-5"
-        data-ride="carousel"
-        data-interval="5000"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="text-box col-md-5">
-                <h2 class="hidden" style="color: #fff">CALLED TO SERVE! 💪</h2>
-                <h3>
-                  “Called to serve” - A community platform for missionaries of
-                  Agege stake to connect missionaries who just received their
-                  calls to share their respective mission places for others to
-                  see.
-                </h3>
-              </div>
-
-              <div class="col-md-7">
-                <img
-                  class="group-pic"
-                  src="image/group-photo.jpeg"
-                  loading="lazy"
-                  alt="Group Photograph"
-                />
-              </div>
+      <!-- CONTENT DISPLAY STARTS HERE -->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="text-box" style="background-color: #062349">
+              <h2 style="color: #fff">CALLED TO SERVE! 💪</h2>
+              <h3>
+                “Called to serve” - A community platform for missionaries of
+                Agege stake to connect missionaries who just received their
+                calls to share their respective mission places for others to
+                see.
+              </h3>
             </div>
+            <a href="image/group-photo.jpeg" target="_blank">
+              <img
+                class="group-pic img-fluid"
+                src="image/group-photo.jpeg"
+                loading="lazy"
+                alt="Group Photograph"
+              />
+            </a>
           </div>
 
-          <div class="carousel-item">
-            <div class="row">
-              <div class="text-box col-md-5">
-                <h2>Your Missionary Purpose</h2>
-                <h3>
-                  To invite others to come unto Christ by helping them receive
-                  the restored gospel through faith in Jesus Christ and His
-                  Atonement, repentance, baptism, receiving the gift of the Holy
-                  Ghost, and enduring till the end.
-                </h3>
-              </div>
-
-              <div class="col-md-7">
-                <img
-                  class="group-pic"
-                  src="image/prep-class.jpeg"
-                  loading="lazy"
-                  alt="Group Photograph"
-                />
-              </div>
+          <div class="col-md-6 mb-4">
+            <div class="text-box" style="background-color: #062349">
+              <h2>Your Missionary Purpose</h2>
+              <h3>
+                To invite others to come unto Christ by helping them receive the
+                restored gospel through faith in Jesus Christ and His Atonement,
+                repentance, baptism, receiving the gift of the Holy Ghost, and
+                enduring till the end.
+              </h3>
             </div>
+            <a href="image/prep-class.jpeg" target="_blank">
+              <img
+                class="group-pic img-fluid"
+                src="image/prep-class.jpeg"
+                loading="lazy"
+                alt="Group Photograph"
+              />
+            </a>
           </div>
         </div>
       </div>
-      <!-- CAROUSEL/SLIDESHOW ENDS HERE -->
+      <!-- CONTENT DISPLAY ENDS HERE -->
 
       <!-- PRESIDENT NELSON STARTS -->
       <div class="col-lg-12 mt-3">
@@ -299,10 +289,33 @@
     </div>
     <!-- MAIN ENDS -->
 
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        const slides = document.getElementsByClassName("mySlides");
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000);
+      }
+
+      function plusSlides(n) {
+        slideIndex += n - 1;
+        showSlides();
+      }
+    </script>
+
     <!-- BOOTSTRAP JS STARTS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
     <!-- BOOTSTRAP JS ENDS -->
   </body>
 </html>
