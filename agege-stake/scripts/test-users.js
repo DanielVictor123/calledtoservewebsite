@@ -7,53 +7,45 @@ fetch("missionaries.json")
   })
   .then((data) => {
     const missionariesList = document.getElementById("missionariesList");
+    missionariesList.innerHTML = ""; // Clear existing content
 
-    // Clear existing content if any
-    missionariesList.innerHTML = "";
+    // Create cards
+    data.forEach((missionary) => {
+      const card = document.createElement("div");
+      card.classList.add("col-md-4", "mb-4"); // Ensure cards are in a grid
 
-    // Create slides
-    data.forEach((missionary, index) => {
-      const slide = document.createElement("div");
-      slide.classList.add("slide");
+      card.innerHTML = `
+        <div class="card">
+          <a href="${missionary.image}" target="_blank">
+            <img src="${
+              missionary.image
+            }" loading="lazy" alt="Profile picture" class="card-img-top">
+          </a>
+          <div class="card-body">
+            <h4 class="text-primary">${missionary.name}</h4>
+            <h6 class="mb-2 text-muted">Departure Date: ${
+              missionary.departureDate
+            }</h6>
+            <h6 class="mb-2 text-muted">Return Date: ${
+              missionary.returnDate || "Not Available"
+            }</h6>
+            <h6 class="mb-2 text-muted">Mission: ${missionary.mission}</h6>
+            <h6 class="mb-2 text-muted">Mail: ${
+              missionary.email || "Not Provided"
+            }</h6>
+            <h6 class="mb-2 text-muted">Home Area: ${
+              missionary.homeArea || "Unknown"
+            }</h6>
+          </div>
+        </div>
+      `;
 
-      slide.innerHTML = `
-                        <div class="card mt-5">
-                          <a href="${missionary.image}" target="_blank">
-                            <img src="${missionary.image}" loading="lazy" alt="Profile picture" class="card-img-top">
-                          </a>
-                            <div class="card-body">
-                                <h4 class=" text-primary text-decoration-none">${missionary.name}</h4>
-                                <h6 class=" mb-2 text-muted text-decoration-none">Departure Date: ${missionary.departureDate}</h6>
-                                <h6 class=" mb-2 text-muted text-decoration-none">Return Date: ??-??-????</h6>
-                                <h6 class=" mb-2 text-muted text-decoration-none">Mission: ${missionary.mission}</h6>
-                                <h6 class=" mb-2 text-muted text-decoration-none">Mail:</h6>
-                            </div>
-                        </div>
-                    `;
-
-      missionariesList.appendChild(slide);
+      missionariesList.appendChild(card);
     });
-
-    // Set the first slide as active
-    if (missionariesList.children.length > 0) {
-      missionariesList.children[0].classList.add("active");
-    }
-
-    // Slideshow functionality
-    let slideIndex = 0;
-    const slides = document.querySelectorAll(".slide");
-
-    function showSlides() {
-      slides.forEach((slide) => {
-        slide.classList.remove("active");
-      });
-      slideIndex = (slideIndex + 1) % slides.length;
-      slides[slideIndex].classList.add("active");
-    }
-
-    // Change slides every 3 seconds
-    setInterval(showSlides, 5000);
   })
   .catch((error) => {
+    const missionariesList = document.getElementById("missionariesList");
+    missionariesList.innerHTML =
+      "<p>Error loading missionaries. Please try again later.</p>";
     console.error("Error fetching missionaries:", error);
   });

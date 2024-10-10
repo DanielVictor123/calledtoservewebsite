@@ -46,6 +46,7 @@
     <title>Agege Stake Missionaries</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/missionaries.css" />
     <link rel="stylesheet" href="styles/slideshow.css" />
     <link rel="stylesheet" href="styles/screen.css" />
     <link rel="stylesheet" href="styles/load.css" />
@@ -95,10 +96,12 @@
             <h3>💪</h3>
           </div>
         </div>
+
+        <h2>Agege Stake Missionary Hub</h2>
+
         <h3 class="h1-sub" style="text-decoration: underline">
           Connecting Missionaries, Sharing Experience.
         </h3>
-        <h2>Agege Stake Missionary Hub</h2>
         <a href="https://calledtoserve.vercel.app/agege-stake/index.html"
           >calledtoserve.com</a
         >
@@ -233,6 +236,30 @@
       </div>
       <!-- Missionary quotes end -->
 
+      <!-- MISSIONARIES SECTION STARTS -->
+      <div
+        class="text-center text-white container box mt-5"
+        style="background-color: #053862; border-radius: 10px"
+      >
+        <h1>Our Missionaries</h1>
+        <h3>View all of our Missionaries from Agege Stake</h3>
+      </div>
+
+      <!-- SLIDESHOW IMPLEMENTATION STARTS -->
+      <div class="slideshow-container col-lg-12" id="missionariesList">
+        <!-- THIS PART WILL BE CARRIED OUT BY THE JAVA SCRIPT FUNCTIONS -->
+      </div>
+      <!-- SLIDESHOW IMPLEMENTATION ENDS -->
+      <!-- MISSIONARIES SECTION ENDS -->
+
+      <!-- VIEW ALL CARDS STARTS -->
+      <a href="missionaries.html">
+        <button title="View All" class="view">
+          <strong>+ View All</strong>
+        </button>
+      </a>
+      <!-- VIEW ALL CARD ENDS -->
+
       <!-- ADS STARTS HERE AGAIN -->
       <div id="box-card">
         <div class="modal-card" id="ads" style="display: none">
@@ -289,7 +316,9 @@
     </div>
     <!-- MAIN ENDS -->
 
-    <script>
+    <script src="scripts/missionaries-slide.js"></script>
+
+    <!-- <script>
       let slideIndex = 0;
       showSlides();
 
@@ -310,7 +339,7 @@
         slideIndex += n - 1;
         showSlides();
       }
-    </script>
+    </script> -->
 
     <!-- BOOTSTRAP JS STARTS -->
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
