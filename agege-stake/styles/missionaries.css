@@ -1,46 +1,51 @@
- /*--SLIDESHOW STARTS--*/
- .slideshow-container {
-    position: relative;
-    width: 100%; /* Full width */
-    margin: auto; /* Center the slideshow */
-  }
+/*--SLIDESHOW STARTS--*/
+.slideshow-container {
+  position: relative;
+  width: 100%; /* Full width */
+  margin: auto; /* Center the slideshow */
+}
 
-  .slide {
-    display: none;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
+.slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
-  .slide.active {
-    display: block;
-    opacity: 1;
-  }
+.slide.active {
+  display: block;
+  opacity: 1;
+}
 
+.card {
+  border: none;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-img-top {
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+/* RESPONSIVENESS*/
+@media (max-width: 576px) {
   .card {
-    border: none;
-    width: 100%; /* Full width */
-    max-width: 400px; /* Moderate width */
-    margin: auto; /* Center the card */
+    max-width: 90%;
   }
 
   .card-img-top {
-    width: 600px; /* Full width */
-    height: 600px; /* Fixed height for moderate size */
-    object-fit: cover; /* Cover the area without distortion */
+    height: 400px;
   }
-
-  .card-body {
-    text-align: center; /* Center text */
-  }
-
-  /* Responsive adjustments */
-  @media (max-width: 576px) {
-    .card {
-      max-width: 90%; /* Wider on small screens */
-    }
-
-    .card-img-top {
-      height: 400px; /* Smaller height on mobile */
-    }
-  }
-  /*--SLIDESHOW ENDS--*/
+}
+/*--SLIDESHOW ENDS--*/

@@ -1,13 +1,13 @@
 [
   {
-    "name": "Elder  Alasa ",
+    "name": "Elder Ogboanoh",
     "departureDate": "15-04-2024",
     "mission": "Cape Verde Mission",
     "image": "image/ogoanoh.jpg",
     "gender": "him"
   },
   {
-    "name": "Sister Victoria",
+    "name": "Sister Inyang",
     "departureDate": "03-2025",
     "gender": "her",
     "mission": "Phillipines Mission",
@@ -18,17 +18,18 @@
     "departureDate": "31-10-2024",
     "gender": "him",
     "mission": "Nigeria Uyo Mission",
-    "image": "image/israel-oyeyemi.jpg"
+    "image": "image/israel-oyeyemi.jpg",
+    "mail": "israel.oyeyemi@missionary.org"
   },
   {
     "name": "Elder F-Etuk",
     "departureDate": "21-12-2024",
-    "mission": "Nig-Calabar Mission",
+    "mission": "Calabar Mission",
     "image": "./image/Victor.jpg",
     "gender": "him"
   },
   {
-    "name": "Sister  Ijitola",
+    "name": "Sister Ijitola",
     "departureDate": "21-11-2024",
     "mission": "Nigeria Enugu Mission",
     "image": "image/sister-ayomide.jpg",

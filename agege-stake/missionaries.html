@@ -3,11 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Missionaries</title>
+    <meta
+      name="author"
+      content="Israel Oyeyemi, Israel Mobote, Victor D. Etuk"
+    />
+    <meta
+      name="description"
+      content="Connecting Missionaries, Sharing Experience."
+    />
+    <meta property="og:title" content="Agege Stake Missionaries" />
+    <meta
+      property="og:image"
+      content="AgegeStakeMissionaries.github.io/calledtoserve/image/group-photo.jpeg"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content=" “Called to serve”- A community platform for missionaries of Agege stake to connect missionaries who just received their calls to share their respective mission places for others to see. And to bring awareness of when and where their fellow missionaries would be serving to all missionaries at Agege stake ."
+    />
+    <meta
+      property="og:url"
+      content="AgegeStakeMissionaries.github.io/calledtoserve/index.html"
+    />
+    <meta property="og:locale" content="en_US.utf-8" />
+    <meta property="og:site_name" content="Called To Serve" />
+    <meta property="twitter:card" content="SUmmary_large_img" />
+    <meta property="twitter:site" content="@calledtoserve" />
+    <meta property="twitter:title" content="Called TO Serve 💪" />
+    <meta
+      property="twitter:description"
+      content="Connecting Missionaries, Sharing Experience."
+    />
+    <meta
+      property="twitter:image"
+      content="AgegeStakeMissionaries.github.io/calledtoserve/image/group-photo.jpeg"
+    />
+    <meta
+      property="twitter:url"
+      content="AgegeStakeMissionaries.github.io/calledtoserve/index.html"
+    />
+    <link rel="shortcut icon" href="image/Designer.jpeg" type="image/x-icon" />
+    <title>Agege Stake Missionaries</title>
     <link rel="shortcut icon" href="image/Designer.jpeg" type="image/x-icon" />
     <link rel="stylesheet" href="styles/missionaries.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/error-modal.css" />
     <link rel="stylesheet" href="styles/screen.css" />
     <link rel="stylesheet" href="styles/load.css" />
     <link rel="stylesheet" href="styles/ads.css" />
@@ -17,10 +58,14 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="https://icons.getbootstrap.com/icons/" />
     <!-- BOOTSTRAP CSS ENDS -->
+
     <script src="scripts/load.js" defer></script>
     <script src="scripts/ads.js" defer></script>
   </head>
+
   <body>
     <!-- PRE-LOADER STARTS -->
     <div id="loader" class="loader">
@@ -35,29 +80,26 @@
       <!--HEADER STARTS-->
       <header>
         <div class="head-div">
-          <img src="image/Designer.webp" alt="Logo-img" class="logo-img" />
+          <img src="image/logo-2.jpeg" alt="Logo-img" class="logo-img" />
           <div class="head-txt">
             <h3 class="called">Called</h3>
-            <h3>To</h3>
+            <h1>To</h1>
             <h3 class="serve">Serve</h3>
             <h3>💪</h3>
           </div>
         </div>
-        <h3 class="h1-sub" style="text-decoration: underline">
-          Connecting Missionaries, Sharing Experience.
-        </h3>
         <h2>Agege Stake Missionary Hub</h2>
+        <h4 class="h1-sub">Connecting Missionaries, Sharing Experience.</h4>
         <a href="https://calledtoserve.vercel.app/agege-stake/index.html"
           >calledtoserve.com</a
         >
         <nav>
-          <a href="index.html" class="active">Home</a>
-          <a href="missionaries.html">Missionaries</a>
+          <a href="index.html">Home</a>
+          <a href="missionaries.html" class="active">Missionaries</a>
           <a href="about.html">About</a>
         </nav>
       </header>
       <!--HEADER ENDS-->
-
       <!-- MISSIONARIES SECTION STARTS -->
       <div
         class="text-center text-white container box mt-5"
@@ -67,20 +109,53 @@
         <h3>View all of our Missionaries from Agege Stake</h3>
       </div>
 
-      <!-- SLIDESHOW IMPLEMENTATION STARTS -->
-      <div class="slideshow-container col-lg-12" id="missionariesList">
-        <!-- THIS PART WILL BE CARRIED OUT BY THE JAVA SCRIPT FUNCTIONS -->
+      <!-- MISSIONARIES CARDS STARTS -->
+      <div class="container mt-4">
+        <div class="row" id="missionariesList">
+          <!-- Missionary cards will be inserted here by JavaScript -->
+        </div>
       </div>
-      <!-- SLIDESHOW IMPLEMENTATION ENDS -->
-      <!-- MISSIONARIES SECTION ENDS -->
+      <!-- MISSIONARIES CARDS ENDS -->
 
       <!-- VIEW ALL CARDS STARTS -->
-      <a href="missionaries.html">
+      <a href="javascript:void(0);" onclick="showModal()">
         <button title="View All" class="view">
           <strong>+ Add</strong>
         </button>
       </a>
       <!-- VIEW ALL CARD ENDS -->
+
+      <!-- ERROR-MODAL STARTS -->
+      <div id="errorModal" class="col-lg-12 col-md-12 modal">
+        <div class="col-md-6 modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="error">Error!</div>
+          <p>Please you do not have access to carry out this function.</p>
+          <p>Contact the number/email-address below to get this done.</p>
+          <div class="contact-info">
+            <span>
+              <a href="https://wa.me/1234567890" target="_blank">
+                <i class="bi bi-telephone-forward icon"></i>WhatsApp +234 701
+                972 2577
+                <span class="bi bi-arrow-right arrow">Or</span>
+              </a>
+
+              <a href="tel:+23480000000" target="_blank">
+                <i class="bi bi-telephone-forward icon"></i> Call +234 701 972
+                2577
+                <span class="bi bi-arrow-right arrow">Or</span>
+              </a>
+            </span>
+            <a href="mailto: olamideadedayo@gmail.com" target="_blank">
+              <span
+                ><i class="bi bi-envelope-at icon"></i>
+                olamideadedayo@gmail.com</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ERROR-MODAL ENDS -->
 
       <!--FOOTER STARTS-->
       <footer
@@ -101,6 +176,25 @@
             >Called To Serve Official Website</a
           >
         </div>
+
+        <div class="footer-log-div">
+          <i class="fa fa-1x fa-envelope" style="color: rgb(8, 255, 255)"></i>
+          <a
+            href="mailto:agegestakemissionaries@gmail.com"
+            style="color: #fff; padding: 10px"
+            >agegestakemissionaries@gmail.com</a
+          >
+        </div>
+
+        <div class="contact-div">
+          <i
+            class="fa fa-1x fa-address-book"
+            style="color: rgb(8, 255, 255)"
+          ></i>
+          <a href="tel:+2348000000000" style="color: #fff; padding: 10px"
+            >+2348000000000</a
+          >
+        </div>
         <br />
         <p>
           <strong
@@ -116,8 +210,9 @@
       </footer>
       <!--FOOTER ENDS-->
     </div>
+    <!--MAIN ENDS-->
 
-    <!-- MAIN ENDS -->
-    <script src="scripts/test-users.js"></script>
+    <script src="scripts/test-users.js" defer></script>
+    <script src="scripts/error-modal.js"></script>
   </body>
 </html>
