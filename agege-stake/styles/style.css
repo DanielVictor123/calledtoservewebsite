@@ -23,7 +23,13 @@ header {
 }
 header a {
   color: #fff;
+  text-decoration: underline;
 }
+
+header a:hover {
+  text-decoration: none;
+}
+
 .head-div {
   display: flex;
   flex-direction: row;
@@ -70,10 +76,17 @@ nav a {
   font-weight: 700;
 }
 nav a:hover {
-  background-color: #022e5b;
+  background-color: #3b50af;
   color: white;
   font-weight: 700;
 }
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column; 
+  }
+}
+
 .main_img {
   /* max-height: 300px; */
   display: flex;

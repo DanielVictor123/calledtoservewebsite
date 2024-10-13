@@ -26,9 +26,6 @@ fetch("missionaries.json")
             <h6 class="mb-2 text-muted">Departure Date: ${
               missionary.departureDate
             }</h6>
-            <h6 class="mb-2 text-muted">Return Date: ${
-              missionary.returnDate || "Not Available"
-            }</h6>
             <h6 class="mb-2 text-muted">Mission: ${missionary.mission}</h6>
             <h6 class="mb-2 text-muted">Mail: ${
               missionary.email || "Not Provided"
