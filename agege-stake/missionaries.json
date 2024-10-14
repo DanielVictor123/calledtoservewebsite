@@ -26,27 +26,31 @@
     "departureDate": "21-12-2024",
     "mission": "Calabar Mission",
     "image": "./image/Victor.jpg",
-    "gender": "him"
+    "gender": "him",
+    "mail": "victor.friday.-.etuk@missionary.org"
   },
   {
     "name": "Sister Ijitola",
     "departureDate": "21-11-2024",
     "mission": "Nigeria Enugu Mission",
     "image": "image/sister-ayomide.jpg",
-    "gender": "her"
+    "gender": "her",
+    "mail": "ayomide.ijitola@missionary.org"
   },
   {
     "name": "Elder Kefas",
     "departureDate": "21-01-2025",
     "mission": "Nigeria Uyo Mission",
     "gender": "him",
-    "image": "image/kefas-close-2.jpg"
+    "image": "image/kefas-close-2.jpg",
+    "mail": "josiah.kefas@missionary.org"
   },
   {
     "name": "Sister F-Etuk",
     "departureDate": "27-03-2025",
     "mission": "Nigeria Abuja Mission",
     "image": "image/favour-etuk.jpg",
-    "gender": "her"
+    "gender": "her",
+    "mail": "favour.friday.-.etuk@missionary.org"
   }
 ]
