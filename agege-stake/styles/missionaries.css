@@ -49,3 +49,23 @@
   }
 }
 /*--SLIDESHOW ENDS--*/
+
+/*--SPARKLE ANIMATION STARTS--*/
+.sparkle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(5, 55, 109);
+  pointer-events: none;
+  animation: sparkle-animation 1s ease-in-out forwards;
+}
+@keyframes sparkle-animation {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+/*--SPARKLE ANIMATION ENDS--*/
