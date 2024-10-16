@@ -28,7 +28,7 @@ fetch("missionaries.json")
             }</h6>
             <h6 class="mb-2 text-muted">Mission: ${missionary.mission}</h6>
             <h6 class="mb-2 text-muted">Mail: ${
-              missionary.email || "Not Provided"
+              missionary.mail || "Not Provided"
             }</h6>
             <h6 class="mb-2 text-muted">Home Area: ${
               missionary.homeArea || "Unknown"
