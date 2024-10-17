@@ -18,7 +18,7 @@ fetch("missionaries.json")
 
       slide.innerHTML = `
                         <div class="card mt-5">
-                          <a href="/agege-stake/missionaries.html">
+                          <a href="https://danielvictor123.github.io/calledtoservewebsite/agege-stake/missionaries.html">
                             <img src="${missionary.image}" loading="lazy" alt="Profile picture" class="card-img-top">
                           </a>
                             <div class="card-body">
