@@ -138,6 +138,12 @@ nav a:hover {
 h3 {
   text-align: center;
 }
+
+.video-responsive {
+  width: 100%;
+  height: auto;
+}
+
 .hidden {
   opacity: 0;
   transition: all 2s;
