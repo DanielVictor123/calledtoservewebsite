@@ -23,7 +23,7 @@
   },
   {
     "name": "Elder F-Etuk",
-    "departureDate": "21-12-2024",
+    "departureDate": "12-12-2024",
     "mission": "Calabar Mission",
     "image": "./image/victordf-e.jpeg",
     "gender": "him",
@@ -39,7 +39,7 @@
   },
   {
     "name": "Elder Kefas",
-    "departureDate": "21-01-2025",
+    "departureDate": "23-01-2025",
     "mission": "Nigeria Uyo Mission",
     "gender": "him",
     "image": "image/kefas-close-2.jpg",
@@ -47,7 +47,7 @@
   },
   {
     "name": "Sister F-Etuk",
-    "departureDate": "27-03-2025",
+    "departureDate": "20-03-2025",
     "mission": "Nigeria Abuja Mission",
     "image": "image/favour-etuk.jpg",
     "gender": "her",
