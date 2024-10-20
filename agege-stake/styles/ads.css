@@ -1,0 +1,168 @@
+.modal-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  z-index: 20;
+  /* Ensures it's in front of the backdrop */
+  text-align: center;
+}
+#chat-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-image: url(../image/prep-class.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+#chat-card::before {
+  filter: blur(1px);
+  opacity: 0.5px;
+  border-radius: 10px;
+  /* z-index: -1; */
+}
+.chat-modal-card {
+  padding: 1rem;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 1px, 1px, 0.3);
+  width: 350px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+}
+.chat-modal-card h2 {
+}
+.modal-card h2,
+.chat-modal-card h2 {
+  font-size: 1.5em;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.chat-modal-card p {
+  background-color: rgba(52, 76, 126, 0.651);
+  padding: 20px;
+  font-weight: 900;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.modal-card p,
+.chat-modal-card p {
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0073e6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.chat-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: white;
+  color: rgb(38, 36, 165);
+  text-decoration: none;
+  border-radius: 5px;
+}
+.chat-btn:hover {
+  background-color: #005bb5;
+  color: #fff;
+  transition: 0.6s ease-in;
+  font-weight: 900;
+}
+.btn:hover {
+  background-color: #005bb5;
+  font-weight: 900;
+}
+.exit {
+  position: absolute;
+  background-color: #c5cfda;
+  color: #000;
+  padding: 25px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  right: 2px;
+  top: 4px;
+  cursor: pointer;
+  padding: 15px;
+}
+.exit:hover {
+  background-color: #005bb5;
+  color: #fff;
+}
+/* SHOWING THE MODAL */
+.modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+  margin-bottom: 25px;
+}
+.close {
+  cursor: pointer;
+  color: rgb(255, 0, 0);
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-weight: 900;
+}
+.error {
+  color: red;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.contact-info {
+  margin-top: 20px;
+}
+.close p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.contact-info span {
+  display: inline-block;
+  margin: 5px 0;
+}
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    /* animation: fadeIn 0.5s; */
+}

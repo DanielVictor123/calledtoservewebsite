@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Israel Oyeyemi, Israel Mobote, Victor D. Etuk"
+    />
+    <meta
+      name="description"
+      content="Connecting Missionaries, Sharing Experience."
+    />
+    <meta property="og:title" content="Agege Stake Missionaries" />
+    <meta
+      property="og:image"
+      content="AgegeStakeMissionaries.github.io/calledtoserve/image/group-photo.jpeg"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content=" “Called to serve”- A community platform for missionaries of Agege stake to connect missionaries who just received their calls to share their respective mission places for others to see. And to bring awareness of when and where their fellow missionaries would be serving to all missionaries at Agege stake ."
+    />
+    <meta
+      property="og:url"
+      content="AgegeStakeMissionaries.github.io/calledtoserve/index.html"
+    />
+    <meta property="og:locale" content="en_US.utf-8" />
+    <meta property="og:site_name" content="Called To Serve" />
+    <meta property="twitter:card" content="SUmmary_large_img" />
+    <meta property="twitter:site" content="@calledtoserve" />
+    <meta property="twitter:title" content="Called TO Serve 💪" />
+    <meta
+      property="twitter:description"
+      content="Connecting Missionaries, Sharing Experience."
+    />
+    <meta
+      property="twitter:image"
+      content="AgegeStakeMissionaries.github.io/calledtoserve/image/group-photo.jpeg"
+    />
+    <meta
+      property="twitter:url"
+      content="AgegeStakeMissionaries.github.io/calledtoserve/index.html"
+    />
+    <link rel="shortcut icon" href="image/Designer.jpeg" type="image/x-icon" />
+    <title>Agege Stake Missionaries</title>
+    <link rel="shortcut icon" href="image/Designer.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/missionaries.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/error-modal.css" />
+    <link rel="stylesheet" href="styles/screen.css" />
+    <link rel="stylesheet" href="styles/load.css" />
+    <link rel="stylesheet" href="styles/ads.css" />
+
+    <!-- BOOTSTRAP CSS STARTS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://icons.getbootstrap.com/icons/" />
+    <!-- BOOTSTRAP CSS ENDS -->
+
+    <script src="scripts/load.js" defer></script>
+    <script src="scripts/ads.js" defer></script>
+    <script src="scripts/sparkles.js" defer></script>
+  </head>
+
+  <body>
+    <!-- PRE-LOADER STARTS -->
+    <div id="loader" class="loader">
+      <div class="outer"></div>
+      <div class="middle"></div>
+      <div class="inner"></div>
+    </div>
+    <!-- PRE-LOADER ENDS -->
+
+    <!-- MAIN STARTS -->
+    <div id="content" style="display: none">
+      <!--HEADER STARTS-->
+      <header>
+        <div class="head-div">
+          <img src="image/logo-2.jpeg" alt="Logo-img" class="logo-img" />
+          <div class="head-txt">
+            <h3 class="called">Called</h3>
+            <h1>To</h1>
+            <h3 class="serve">Serve</h3>
+            <h3>💪</h3>
+          </div>
+        </div>
+        <h2>Agege Stake Missionary Hub</h2>
+        <h4 class="h1-sub">Connecting Missionaries, Sharing Experience.</h4>
+        <a href="https://calledtoserve.vercel.app/agege-stake/index.html"
+          >calledtoserve.com</a
+        >
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="missionaries.html" class="active">Missionaries</a>
+          <a href="about.html">About</a>
+        </nav>
+      </header>
+      <!--HEADER ENDS-->
+      <!-- MISSIONARIES SECTION STARTS -->
+      <div
+        class="text-center text-white container box mt-5"
+        style="background-color: #053862; border-radius: 10px"
+      >
+        <h1>Our Missionaries</h1>
+        <h3>View all of our Missionaries from Agege Stake</h3>
+      </div>
+
+      <marquee behavior="scroll" direction="right">
+        <br />
+        <h3 class="text-primary">
+          Click anywhere to <br />
+          activate music
+        </h3>
+      </marquee>
+
+      <!-- MISSIONARIES CARDS STARTS -->
+      <div class="container mt-4">
+        <div class="row" id="missionariesList">
+          <!-- Missionary cards will be inserted here by JavaScript -->
+        </div>
+      </div>
+      <!-- MISSIONARIES CARDS ENDS -->
+
+      <!-- BACKGROUND AUDIO PLAY STARTS -->
+      <audio id="background-music" autoplay loop muted style="overflow: hidden;">
+        <source
+          src="/agege-stake/media/Agreatwork.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+      <!-- BACKGROUND AUDIO PLAY ENDS -->
+
+      <!-- VIEW ALL CARDS STARTS -->
+      <a href="javascript:void(0);" onclick="showModal()">
+        <button title="View All" class="view">
+          <strong>+ Add</strong>
+        </button>
+      </a>
+      <!-- VIEW ALL CARD ENDS -->
+
+      <!-- ERROR-MODAL STARTS -->
+      <div id="errorModal" class="col-lg-12 col-md-12 modal">
+        <div class="col-md-6 modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="error">Error!</div>
+          <p>Please you do not have access to carry out this function.</p>
+          <p>Contact the number/email-address below to get this done.</p>
+          <div class="contact-info">
+            <span>
+              <a href="https://wa.me/1234567890" target="_blank">
+                <i class="bi bi-telephone-forward icon"></i>WhatsApp +234 701
+                972 2577
+                <span class="bi bi-arrow-right arrow">Or</span>
+              </a>
+
+              <a href="tel:+23480000000" target="_blank">
+                <i class="bi bi-telephone-forward icon"></i> Call +234 701 972
+                2577
+                <span class="bi bi-arrow-right arrow">Or</span>
+              </a>
+            </span>
+            <a href="mailto: olamideadedayo@gmail.com" target="_blank">
+              <span
+                ><i class="bi bi-envelope-at icon"></i>
+                olamideadedayo@gmail.com</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ERROR-MODAL ENDS -->
+
+      <!--FOOTER STARTS-->
+      <footer
+        class="container-fluid bg-footer text-white mt-5"
+        style="margin-top: 70px"
+      >
+        <p>Follow us on social media:</p>
+        <div class="footer-logo-div d-flex flex-column align-items-center">
+          <img
+            src="image/web_link.png"
+            class="img-rounded img-fluid mb-2"
+            loading="lazy"
+            alt="Internet Logo"
+          />
+          <a
+            style="color: #fff; padding: 10px"
+            href="https://calledtoserve.vercel.app/agege-stake/index.html"
+            >Called To Serve Official Website</a
+          >
+        </div>
+
+        <div class="footer-log-div">
+          <i class="fa fa-1x fa-envelope" style="color: rgb(8, 255, 255)"></i>
+          <a
+            href="mailto:agegestakemissionaries@gmail.com"
+            style="color: #fff; padding: 10px"
+            >agegestakemissionaries@gmail.com</a
+          >
+        </div>
+
+        <div class="contact-div">
+          <i
+            class="fa fa-1x fa-address-book"
+            style="color: rgb(8, 255, 255)"
+          ></i>
+          <a href="tel:+2348000000000" style="color: #fff; padding: 10px"
+            >+2348000000000</a
+          >
+        </div>
+        <br />
+        <p>
+          <strong
+            >"Behold, I am a disciple of Jesus Christ, the Son of God. I have
+            been called of him to declare his words among his people, that they
+            might have everlasting life"</strong
+          >
+        </p>
+        <br />
+        <div class="footer-logo-div">
+          <p>&copy; 2024 Called To Serve</p>
+        </div>
+      </footer>
+      <!--FOOTER ENDS-->
+    </div>
+    <!--MAIN ENDS-->
+
+    <script src="scripts/test-users.js" defer></script>
+    <script src="scripts/error-modal.js"></script>
+  </body>
+</html>

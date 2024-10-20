@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/*--SLIDESHOW STARTS--*/
+.slideshow-container {
+  position: relative;
+  width: 100%; /* Full width */
+  margin: auto; /* Center the slideshow */
+}
+
+.slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.card {
+  border: none;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-img-top {
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+/* RESPONSIVENESS*/
+@media (max-width: 576px) {
+  .card {
+    max-width: 90%;
+  }
+
+  .card-img-top {
+    height: 400px;
+  }
+}
+/*--SLIDESHOW ENDS--*/
+
+/*--SPARKLE ANIMATION STARTS--*/
+.sparkle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(5, 55, 109);
+  pointer-events: none;
+  animation: sparkle-animation 1s ease-in-out forwards;
+}
+@keyframes sparkle-animation {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+/*--SPARKLE ANIMATION ENDS--*/
