@@ -85,7 +85,7 @@ fetch("missionaries.json")
             <h6 class="mb-2 text-muted">Mail: ${
               missionary.mail || "Not Provided"
             }</h6>
-            <h6 class="mb-2 text-muted">Return Countdown: <span class="countdown" style="color: black;">${
+            <h6 class="mb-2 text-muted">Return Date Countdown: <span class="countdown" style="color: black;">${
               countdown().text
             }</span></h6>
           </div>
