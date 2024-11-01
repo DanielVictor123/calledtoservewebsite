@@ -72,14 +72,14 @@ fetch("missionaries.json")
           </a>
           <div class="card-body">
             <h4 class="text-primary">${missionary.name}</h4>
-            <h6 class="mb-2 text-muted">Departure Countdown: <span class="countdown-departure" style="color: red;">${
+            <h6 class="mb-2 text-muted">Departure Date: <span class="countdown-departure" style="color: red;">${
               countdown().text
             }</span></h6>
             <h6 class="mb-2 text-muted">Mission: ${missionary.mission}</h6>
             <h6 class="mb-2 text-muted">Mail: ${
               missionary.mail || "Not Provided"
             }</h6>
-            <h6 class="mb-2 text-muted">Return Date Countdown: <span class="countdown-return" style="color: red;">${
+            <h6 class="mb-2 text-muted">Return Date: <span class="countdown-return" style="color: red;">${
               countdown().text
             }</span></h6>
           </div>
