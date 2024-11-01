@@ -99,7 +99,7 @@ fetch("missionaries.json")
         countdownDepartureElement.textContent = countdownData.text;
         countdownDepartureElement.style.color = countdownData.color;
 
-        if (countdownData.text === "Ongoing") {
+        if (countdownData.text === "") {
           countdownReturnElement.textContent = "Ongoing";
           countdownReturnElement.style.color = "green";
         } else {
